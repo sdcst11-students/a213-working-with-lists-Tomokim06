@@ -24,4 +24,10 @@ The animal at that index is Dog
 
 
 
-animals =
+animals = ["Cat", "Fish", "Dog", "Bear", "Turtle"]
+animals.sort()
+print(animals)
+
+q = ("pick a number on the list: ")
+a = int(input(q))
+print(animals[a])
