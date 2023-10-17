@@ -25,3 +25,15 @@ The largest number you entered is 92
 """
 
 
+list = []
+count = 0
+while count < 10:
+    q = "Enter a number to put on the list: "
+    a = (int(input(q)))
+    if a == -1:
+        break
+    elif a > 0:
+        list.append(a)
+        count +=1
+list.sort()
+print(f"The largest number you entered is {list[-1]}")

@@ -27,12 +27,17 @@ word not in list
 fruit = ["apple","cherry","kiwi","apple","banana","strawberry","kiwi","blueberry","kiwi"]
 print(fruit)
 
-q = "Enter a word: "
+q = "Enter a fruit: "
 a = str(input(q))
 num = fruit.count(a)
 
-if num > 1:
-    fruit.remove(a)
+
+
+
+
+if num > 0:
+    x=[j for i,j in enumerate(fruit) if j!=a]  
+    print(x)
 else:
     fruit.append(a)
-print(fruit)
+    print(fruit)
